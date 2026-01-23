@@ -1,9 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.4;
 }
 
 .product {
+  width: 825px;
+  margin: 50px auto;
   border: 5px solid black;
 }
 
@@ -11,6 +18,7 @@ body {
   background-color: #f7f7f7;
   text-align: center;
   text-transform: uppercase;
+  padding: 20px;
 }
 
 .price {
@@ -22,16 +30,16 @@ body {
   text-transform: uppercase;
   color: #777;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.product-detail {
-  text-transform: uppercase;
+.product-desc {
+  margin-bottom: 20px;
 }
 
-ul {
-  list-style: square;
+.link {
+  margin-bottom: 30px;
 }
-
 .more-info:link,
 .more-info:visited {
   color: #000;
@@ -42,15 +50,34 @@ ul {
   text-decoration: none;
 }
 
+.product-detail {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+ul {
+  padding-left: 25px;
+  list-style: square;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
 .add-cart {
+  width: 100%;
+  padding: 20px;
   border: none;
+  border-top: 5px solid black;
   font-size: 20px;
   text-transform: uppercase;
   color: #fff;
   background-color: #000;
+  cursor: pointer;
 }
 
 .add-cart:hover {
   color: #000;
   background-color: #fff;
+  cursor: pointer;
 }
