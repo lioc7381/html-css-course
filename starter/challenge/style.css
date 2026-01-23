@@ -1,26 +1,30 @@
 body {
   font-family: sans-serif;
-  border: 5px solid black;
   line-height: 1.4;
 }
 
-h2 {
+.product {
+  border: 5px solid black;
+}
+
+.product-title {
   background-color: #f7f7f7;
   text-align: center;
   text-transform: uppercase;
 }
 
-p strong {
+.price {
   font-size: 20px;
 }
 
 .free-shipping {
   font-size: 12px;
   text-transform: uppercase;
-  color: #7d7d7d;
+  color: #777;
+  font-weight: bold;
 }
 
-h3 {
+.product-detail {
   text-transform: uppercase;
 }
 
@@ -28,23 +32,25 @@ ul {
   list-style: square;
 }
 
-a:link {
-  color: black;
+.more-info:link,
+.more-info:visited {
+  color: #000;
 }
 
-a:hover {
+.more-info:hover,
+.more-info:active {
   text-decoration: none;
 }
 
-button {
+.add-cart {
   border: none;
   font-size: 20px;
   text-transform: uppercase;
-  color: white;
-  background-color: black;
+  color: #fff;
+  background-color: #000;
 }
 
-button:hover {
-  color: black;
-  background-color: white;
+.add-cart:hover {
+  color: #000;
+  background-color: #fff;
 }
