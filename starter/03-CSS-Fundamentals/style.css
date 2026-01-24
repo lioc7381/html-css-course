@@ -1,11 +1,15 @@
+/* =========================================
+   1. RESET
+   ========================================= */
 * {
   /* border-top: 2px solid blue; */
   margin: 0;
   padding: 0;
 }
 
-/* Page Sections */
-
+/* =========================================
+   2. BASE & LAYOUT
+   ========================================= */
 body {
   color: #444;
   font-family: sans-serif;
@@ -19,45 +23,9 @@ body {
   /* position: relative; */
 }
 
-.main-header {
-  background-color: #f7f7f7;
-  /* padding: 20px;
-  padding-left: 40px;
-  padding-right: 40px; */
-  padding: 20px 40px;
-  margin-bottom: 60px;
-  /* height: 80px; */
-}
-
-nav {
-  font-size: 18px;
-  text-align: center;
-}
-
-.post-header {
-  margin-bottom: 40px;
-  /* position: relative; */
-}
-
-.post-img {
-  width: 100%;
-  height: auto;
-}
-
-article {
-  margin-bottom: 60px;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
-  width: 500px;
-}
-
-/* SMALLER ELEMENTS */
-
+/* =========================================
+   3. TYPOGRAPHY
+   ========================================= */
 h1,
 h2,
 h3 {
@@ -70,6 +38,11 @@ h1 {
   font-style: italic;
 }
 
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
@@ -77,11 +50,28 @@ h2 {
   /* border: 1px solid black; */
 }
 
+h2::after {
+  content: "TOP";
+  display: inline-block;
+  color: #444;
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
 h3 {
   font-size: 30px;
   margin-bottom: 20px;
   margin-top: 40px;
 }
+
+/* h3 + p::first-line {
+  color: red;
+} */
 
 h4 {
   font-size: 20px;
@@ -96,6 +86,9 @@ p {
   /* display: inline; */
 }
 
+/* =========================================
+   4. LISTS
+   ========================================= */
 ul,
 ol {
   margin-left: 50px;
@@ -108,28 +101,6 @@ li {
   /* display: inline; */
 }
 
-li:last-child {
-  margin-bottom: 0;
-}
-
-#author {
-  font-style: italic;
-  font-size: 18px;
-}
-
-#copyright {
-  font-size: 16px;
-}
-
-.related-author {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.related {
-  list-style: none;
-}
-
 /* .first-li {
   font-weight: bold;
 } */
@@ -139,6 +110,7 @@ li:first-child {
 }
 
 li:last-child {
+  margin-bottom: 0;
   font-style: italic;
 }
 
@@ -146,12 +118,10 @@ li:last-child {
   color: red;
 } */
 
-/* Misconception, this wont work */
-article p:first-child {
-  color: red;
-}
-
-/* Styling links */
+/* =========================================
+   5. GLOBAL LINKS
+   ========================================= */
+/* LVHA */
 
 a:link {
   color: #1098ad;
@@ -173,6 +143,24 @@ a:active {
   font-style: italic;
 }
 
+/* =========================================
+   6. HEADER & NAVIGATION
+   ========================================= */
+.main-header {
+  background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 80px; */
+}
+
+nav {
+  font-size: 18px;
+  text-align: center;
+}
+
 nav a:link {
   /* background-color: orangered;
   margin: 20px;
@@ -186,6 +174,56 @@ nav a:link:last-child {
   margin-right: 0;
 }
 
+/* =========================================
+   7. ARTICLE & POSTS
+   ========================================= */
+article {
+  margin-bottom: 60px;
+}
+
+/* Misconception, this won't work
+article p:first-child {
+  color: red;
+} */
+
+.post-header {
+  margin-bottom: 40px;
+  /* position: relative; */
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+/* =========================================
+   8. SIDEBAR (ASIDE)
+   ========================================= */
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
+}
+
+.related {
+  list-style: none;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* =========================================
+   9. UI ELEMENTS (BUTTONS)
+   ========================================= */
 button {
   font-size: 22px;
   padding: 20px;
@@ -197,29 +235,12 @@ button {
   right: 50px;
 }
 
-h1::first-letter {
-  font-style: normal;
-  margin-right: 5px;
-}
-
-h2::after {
-  content: "TOP";
-  display: inline-block;
-  color: #444;
-  background-color: #ffe70e;
+/* =========================================
+   10. FOOTER & CONFLICT RESOLUTION
+   ========================================= */
+#copyright {
   font-size: 16px;
-  font-weight: bold;
-  padding: 5px 10px;
-  position: absolute;
-  top: -10px;
-  right: -25px;
 }
-
-/* h3 + p::first-line {
-  color: red;
-} */
-
-/* LVHA */
 
 /* Resolving conflicts
 
