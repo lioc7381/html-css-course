@@ -12,6 +12,7 @@ body {
   width: 825px;
   margin: 50px auto;
   border: 5px solid black;
+  position: relative;
 }
 
 .product-title {
@@ -80,4 +81,54 @@ li {
   color: #000;
   background-color: #fff;
   cursor: pointer;
+}
+
+.sale {
+  display: inline-block;
+  background-color: #ec2f2f;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 7px 14px;
+  position: absolute;
+  top: -17px;
+  left: -38px;
+}
+
+.color-1,
+.color-2,
+.color-3,
+.color-4,
+.color-5,
+.color-6 {
+  display: inline-block;
+  padding: 15px 13px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+.color-1 {
+  background-color: #000;
+}
+
+.color-2 {
+  background-color: #2f6ee2;
+}
+
+.color-3 {
+  background-color: #ec2f2f;
+}
+
+.color-4 {
+  background-color: #f0ef1e;
+}
+
+.color-5 {
+  background-color: #90cc20;
+}
+
+.color-6 {
+  background-color: #885214;
+  margin-right: 0;
 }
