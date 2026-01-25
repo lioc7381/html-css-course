@@ -148,6 +148,7 @@ a:active {
    ========================================= */
 .main-header {
   background-color: #f7f7f7;
+  background-color: red;
   /* padding: 20px;
   padding-left: 40px;
   padding-right: 40px; */
@@ -259,3 +260,35 @@ button {
 footer p {
   color: green !important;
 } */
+
+/* FLOATS */
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+/* 
+.clear {
+  clear: both;
+} */
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
