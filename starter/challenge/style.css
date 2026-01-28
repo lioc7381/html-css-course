@@ -25,9 +25,8 @@ body {
 
 .price {
   font-size: 30px;
-  float: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* margin-top: 10px; */
+  /* margin-bottom: 10px; */
 }
 
 .free-shipping {
@@ -35,9 +34,7 @@ body {
   text-transform: uppercase;
   color: #777;
   font-weight: bold;
-  margin-top: 20px;
-  /* margin-bottom: 20px; */
-  float: right;
+  /* margin-top: 20px; */
 }
 
 .product-desc {
@@ -60,7 +57,7 @@ body {
 
 .product-detail {
   text-transform: uppercase;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-bottom: 20px;
 }
 
@@ -111,10 +108,10 @@ li {
 .color-4,
 .color-5,
 .color-6 {
-  display: inline-block;
+  /* display: inline-block; */
   padding: 15px 13px;
   /* margin-bottom: 20px; */
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 .color-1 {
   background-color: #000;
@@ -138,8 +135,10 @@ li {
 
 .color-6 {
   background-color: #885214;
-  margin-right: 0;
+  /* margin-right: 0; */
 }
+
+/* FLOAT
 
 .shoe-img {
   float: left;
@@ -147,15 +146,43 @@ li {
 }
 
 .product-info {
-  /* background-color: red; */
   width: 243px;
   float: left;
   margin-right: 30px;
-  /* padding-left: 20px; */
 }
 .product-details {
-  /* background-color: green; */
   width: 243px;
   float: left;
-  /* padding: 15px; */
+} */
+
+/* FLEXBOX */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-info {
+  flex: 0 1 243px;
+}
+
+.product-details {
+  flex: 0 1 243px;
+}
+
+.colors {
+  display: flex;
+  gap: 10px;
+}
+
+.price-shipping {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.shoe-img {
+  align-self: flex-end;
 }
