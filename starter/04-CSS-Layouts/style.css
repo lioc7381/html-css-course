@@ -344,3 +344,20 @@ footer {
   font-weight: normal;
   font-style: italic;
 }
+
+.main-content {
+  display: flex;
+  gap: 75px;
+  /* justify-content: space-between; */
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+article {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+aside {
+  flex: 0 0 300px;
+}
