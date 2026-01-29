@@ -154,7 +154,7 @@ a:active {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 
@@ -179,9 +179,9 @@ nav a:link:last-child {
 /* =========================================
    7. ARTICLE & POSTS
    ========================================= */
-article {
+/* article {
   margin-bottom: 60px;
-}
+} */
 
 /* Misconception, this won't work
 article p:first-child {
@@ -344,11 +344,10 @@ footer {
   font-weight: normal;
   font-style: italic;
 }
-
+/* 
 .main-content {
   display: flex;
   gap: 75px;
-  /* justify-content: space-between; */
   margin-bottom: 60px;
   align-items: flex-start;
 }
@@ -360,4 +359,23 @@ article {
 
 aside {
   flex: 0 0 300px;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  align-items: start;
+  justify-content: center;
+  row-gap: 60px;
+  column-gap: 75px;
+  margin-bottom: 15px;
+}
+
+.main-header {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+footer {
+  grid-column: 1/-1;
 }
