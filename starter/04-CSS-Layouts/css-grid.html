@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -40,7 +40,38 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr auto; */
+        /* grid-template-rows: 300px 200px; */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        /* gap: 30px; */
+        column-gap: 30px;
+        row-gap: 60px;
+        /* height: 500px; */
+        display: none;
       }
+
+      .el--8 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+      }
+
+      .el--2 {
+        /* grid-column: 1 /  4; */
+        /* grid-column: 1 / span 4; */
+        grid-column: 1 / -1;
+        grid-row: 2/3;
+      }
+
+      /* .el--5 {
+        grid-column: 3/4;
+        grid-row: 1/-1;
+      } */
+
+      /* .el--6 {
+        grid-row: 3/6;
+      } */
 
       .container--2 {
         /* STARTER */
@@ -53,6 +84,46 @@
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 50px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+      }
+
+      .el--1 {
+        align-self: start;
+        justify-self: end;
+      }
+
+      .container-3 {
+        font-family: sans-serif;
+        background-color: #ddd;
+        font-size: 40px;
+        margin: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        display: none;
+      }
+
+      .first {
+        background-color: brown;
+      }
+
+      .second {
+        background-color: aqua;
+      }
+
+      .third {
+        background-color: cadetblue;
+      }
+
+      .fourth {
+        background-color: blueviolet;
       }
     </style>
   </head>
@@ -64,7 +135,7 @@
       <div class="el el--4">(4) are</div>
       <div class="el el--5">(5) amazing</div>
       <div class="el el--6">(6) languages</div>
-      <div class="el el--7">(7) to</div>
+      <!-- <div class="el el--7">(7) to</div> -->
       <div class="el el--8">(8) learn</div>
     </div>
 
@@ -75,6 +146,13 @@
       <div class="el el--5">(5)</div>
       <div class="el el--6">(6)</div>
       <div class="el el--7">(7)</div>
+    </div>
+
+    <div class="container-3">
+      <div class="first">First</div>
+      <div class="second">Second</div>
+      <div class="third">Third</div>
+      <div class="fourth">Fourth</div>
     </div>
   </body>
 </html>
